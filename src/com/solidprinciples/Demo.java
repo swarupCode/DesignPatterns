@@ -50,5 +50,8 @@ public class Demo {
         ProductFilter pf = new ProductFilter();
         pf.filterByColor(productList, Color.BLACK).forEach(x ->
                 System.out.println("Color: "+x.color+" | Name: "+x.name));
+        pf.filterBySize(productList, Size.HUGE)
+                .forEach(x ->
+                        System.out.println("Color: "+x.size+" | Name: "+x.name));
     }
 }
